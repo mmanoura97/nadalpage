@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rafael Nadal</title>
+    <link rel="stylesheet" type="text/css" href="Grid.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+
+    <header>
+      
+      <nav>
+        <div class="row">
+          <img src="logo.jpg" alt="logo" class="logo" />
+          <ul class="main-nav">
+            <li><a href=https://el-gr.facebook.com/Nadal>Facebook</a></li>
+            <li><a href="https://www.instagram.com/rafaelnadal/?hl=el">Instagram</a></li>
+            <li><a href="https://twitter.com/rafaelnadal">Twitter</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1>
+          Are you a Nadal fan?<br />
+          This is the page for you
+        </h1>
+        <button class="show-modal">Information</button>
+
+    <div class="modal hidden" id="info">
+      <button class="close-modal">&times;</button>
+      <h1>Rafela Nadal 😍</h1>
+      <p>
+        Rafael "Rafa" Nadal Parera  is a Spanish professional tennis player. He is ranked world No. 3 by the Association of Tennis Professionals (ATP), has been ranked No. 1 in the ATP rankings for 209 weeks, and has finished as the year-end No. 1 five times. Nadal has won 20 Grand Slam men's singles titles, an all-time record shared with Roger Federer. His 13 French Open titles in particular are a record at any tournament. Nadal's dominance on clay is also highlighted by 61 of his 87 ATP singles titles coming on the surface, including 25 of his 35 ATP Tour Masters 1000 titles, and his 81 consecutive wins on clay is the longest single-surface win streak in the Open Era.
+      </p>
+    </div>
+    
+
+        <button class="show-modal btn-s">Statistics</button>
+        <div class="modal hidden" id="tableId">
+          <button class="close-modal">&times;</button>
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <input type="text" id="myInput" onkeyup="myFunction('sortable')" placeholder="name in upper case.."> 
+    <table id="sortable">
+       <!--<tr>
+          <th>Name</th>
+          <th>Points</th>
+          <th>Tournaments</th>
+          
+       </tr>
+       <tr>
+          <td id="name"></td>
+          <td id="points"></td>
+          <td id="tournaments"></td>
+          
+       </tr>-->
+    </table>
+          <!--
+          <table  style="width: 100%">
+            <thead>
+            <tr>
+              <th>Name</th>
+              <th>Points</th>
+              <th>Tournaments</th>
+            </tr>
+          </thead>
+          <tbody id="testBody"></tbody>
+           
+            
+          </table>
+          -->
+        </div>
+
+        <button class="show-modal btn-g" >Games</button>
+        <div class="modal hidden" id="gamesId">
+          <button class="close-modal">&times;</button>
+          
+        <table class="games" id="tableGames"></table>
+      </div>
+
+      <button class="show-modal btn-g" >Edit Rafael</button>
+      <div class="modal hidden" id="editId">
+        <button class="close-modal">&times;</button>
+        
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="Button" value="Save" onclick="saveInfos()">
+        </form> 
+    </div>
+
+      <div class="overlay hidden"></div>
+    </div>
+
+  
+    
+    </header>
+    
+    <section class="section1">
+      <div class="row">
+        <h2>About Rafael</h2>
+        <p class="info">
+          So this is a fan-made page for Rafael Nadal, below you can find some
+          cool fan-facts about Rafael.We know you are looking forward to check
+          out all those cool staff we have in our page , don't wait anymore.
+          Search around
+        </p>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-4 box">
+          <ion-icon class="icon" name="accessibility-outline"></ion-icon>
+          <h3>Youngest player to win Davis Cup</h3>
+
+          <p>
+            The Spanish tennis player is also the youngest player to win the
+            Davis Cup, as an 18-year-old. But at the same age, he suffered a
+            fracture in his left ankle and missed the 2004 French Open.
+          </p>
+        </div>
+        <div class="col span-2-of-4 box">
+          <ion-icon class="icon" name="tennisball-outline"></ion-icon>
+          <h3>3rd male tennis player who won the Grand Slam</h3>
+
+          <p>
+            At the final of the 2005 French Open, Nadal became the third male
+            tennis player who managed to win the Grand Slam in his first attempt
+            after defeating Mariano Puerta. And after this, at age 19, Nadal was
+            considered one of the favorites on clay court
+          </p>
+        </div>
+        <div class="col span-3-of-4 box">
+          <ion-icon class="icon" name="alert-outline"></ion-icon>
+          <h3>First player to win Monte Carlo,Barcelona,and Rome</h3>
+
+          <p>
+            In 2005, Nadal won 16 consecutive games and three consecutive
+            tournaments. Nadal is the first player to win Monte Carlo,
+            Barcelona, and Rome in a row since Thomas Muster in 1995.
+          </p>
+        </div>
+        <div class="col span-4-of-4 box">
+          <ion-icon class="icon" name="heart-outline"></ion-icon>
+          <h3>The best match in tennis history</h3>
+
+          <p>
+            In Wimbledon 2008, Nadal and Federer played the longest final in
+            Wimbledon history, which took 4 hours and 48 minutes and this is
+            considered as the best match in tennis history.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <ul class="showcase">
+        <li>
+          <figure class="photos">
+            <img src="1.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photos">
+            <img src="2.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photos">
+            <img src="3.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photos">
+            <img src="4.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+      </ul>
+      <ul class="showcase">
+        <li>
+          <figure class="photos">
+            <img src="5.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photos">
+            <img src="6.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photos">
+            <img src="7.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+        <li>
+          <figure class="photos">
+            <img src="8.jpg" alt="Nadal Picture" />
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <section class="section3">
+      <div class="row">
+        <h2>Latest cups</h2>
+        <div class="col span-1-of-4 box">
+          <img
+            src="2021.jpg"
+            alt="Nadal beats Stefanos tsitsipas for 12th Barelona Title"
+          />
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="calendar-outline"></ion-icon>
+            Year:2021
+          </div>
+          <div class="tournaments-feature">
+            <ion-icon
+              class="icon1"
+              name="ellipsis-vertical-circle-outline"
+            ></ion-icon>
+            Titles:1
+          </div>
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="newspaper-outline"></ion-icon>
+
+            Tournament:Barcelona (Outdoor/Clay)
+          </div>
+        </div>
+
+        <div class="col span-2-of-4 box">
+          <img src="2020.jpg" alt="Roland Garos:2020" />
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="calendar-outline"></ion-icon>
+            Year:2020
+          </div>
+          <div class="tournaments-feature">
+            <ion-icon
+              class="icon1"
+              name="ellipsis-vertical-circle-outline"
+            ></ion-icon>
+            Titles:2
+          </div>
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="newspaper-outline"></ion-icon>
+
+            Roland Garros (Outdoor/Clay) <br />
+            Acapulco (Outdoor/Hard)
+          </div>
+        </div>
+        <div class="col span-3-of-4 box">
+          <img src="2019.jpg" alt="Rome 2019" />
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="calendar-outline"></ion-icon>
+            Year:2019
+          </div>
+          <div class="tournaments-feature">
+            <ion-icon
+              class="icon1"
+              name="ellipsis-vertical-circle-outline"
+            ></ion-icon>
+            Titles:4
+          </div>
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="newspaper-outline"></ion-icon>
+
+            US Open (Outdoor/Hard) <br />ATP Masters 1000 Canada
+            (Outdoor/Hard)<br />
+            Roland Garros (Outdoor/Clay) <br />ATP Masters 1000 Rome
+            (Outdoor/Clay)
+          </div>
+        </div>
+        <div class="col span-4-of-4 box">
+          <img src="2018.jpg" alt="Toronto 2018" />
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="calendar-outline"></ion-icon>
+            Year:2018
+          </div>
+          <div class="tournaments-feature">
+            <ion-icon
+              class="icon1"
+              name="ellipsis-vertical-circle-outline"
+            ></ion-icon>
+            Titles:5
+          </div>
+
+          <div class="tournaments-feature">
+            <ion-icon class="icon1" name="newspaper-outline"></ion-icon>
+
+            ATP Masters 1000 Canada (Outdoor/Hard)<br />
+            Roland Garros (Outdoor/Clay)<br />
+            ATP Masters 1000 Rome (Outdoor/Clay)<br />
+            Barcelona (Outdoor/Clay) ATP<br />
+            Masters 1000 Monte Carlo (Outdoor/Clay)
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
+  </body>
+</html>
